@@ -3,81 +3,365 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Architha | Portfolio</title>
+    <title>Architha Kurukkanari | Oracle APEX Developer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 <body>
 
     <!-- HEADER -->
     <header>
         <nav>
-            <h2 class="logo">Architha</h2>
-            <ul>
+            <h2 class="logo">Architha<span>.</span></h2>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
 
         <div class="hero" id="home">
-            <h1>Hi, I'm <span>Architha</span></h1>
-            <p>Oracle APEX Developer | SQL & PL/SQL Developer</p>
-            <a href="#contact" class="btn">Hire Me</a>
+            <div class="hero-content">
+                <h1>Hi, I'm <span>Architha Kurukkanari</span></h1>
+                <h2>Oracle APEX Developer & Technical Consultant</h2>
+                <p>Building scalable enterprise applications with Oracle APEX, PL/SQL, and REST APIs. Specializing in database solutions with integrated AI/ML capabilities.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/architha-kurukkanari-424b0a193" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/ArchithaKurukkanari" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:kurukkanariarchithak@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-placeholder">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+            </div>
         </div>
     </header>
 
     <!-- ABOUT SECTION -->
     <section id="about" class="about">
-        <div class="about-img">
-            <img src="assets/profile.jpg" alt="Profile">
-        </div>
-        <div class="about-text">
-            <h2>About Me</h2>
-            <p>
-                I am an Oracle APEX and PL/SQL developer with experience in 
-                building enterprise applications, dashboards, and API integrations.
-            </p>
+        <div class="container">
+            <h2 class="section-title">About <span>Me</span></h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <div class="image-container">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Associate Technical Consultant at Assenta Systems</h3>
+                    <p>I'm a passionate Oracle APEX developer based in Kozhikode, Kerala, with expertise in building enterprise-grade applications, REST APIs, and data analytics solutions.</p>
+                    <p>My technical skills span across Oracle technologies including APEX, SQL, PL/SQL, ORDS, and JavaScript. I'm particularly interested in integrating AI/ML capabilities within database environments to create innovative solutions.</p>
+                    <p>Currently, I'm working at Assenta Systems where I develop applications that streamline business processes and improve operational efficiency for various clients.</p>
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span class="info-label">Location:</span>
+                            <span class="info-value">Kozhikode, Kerala, India</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Email:</span>
+                            <span class="info-value">kurukkanariarchithak@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Phone:</span>
+                            <span class="info-value">+91 6238995611</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- SKILLS SECTION -->
     <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <div class="skill-box">
-            <div class="skill">Oracle APEX</div>
-            <div class="skill">SQL</div>
-            <div class="skill">PL/SQL</div>
-            <div class="skill">REST APIs</div>
-            <div class="skill">JavaScript</div>
+        <div class="container">
+            <h2 class="section-title">Technical <span>Skills</span></h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Database Technologies</h3>
+                    <div class="skill-box">
+                        <div class="skill">
+                            <div class="skill-name">Oracle APEX</div>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">SQL</div>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">PL/SQL</div>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">Oracle Database</div>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming & APIs</h3>
+                    <div class="skill-box">
+                        <div class="skill">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">Python</div>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">REST APIs (ORDS)</div>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">HTML/CSS</div>
+                            <div class="skill-level">
+                                <div class="level-bar" style="width: 82%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-cogs"></i> Specializations</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AI/ML Integration</span>
+                        <span class="skill-tag">Data Analytics</span>
+                        <span class="skill-tag">Dashboard Development</span>
+                        <span class="skill-tag">System Integration</span>
+                        <span class="skill-tag">Performance Optimization</span>
+                        <span class="skill-tag">Git Version Control</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- PROJECT SECTION -->
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Work <span>Experience</span></h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Mar 2023 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Associate Technical Consultant</h3>
+                        <h4>Assenta Systems</h4>
+                        <ul>
+                            <li>Develop and maintain enterprise applications using Oracle APEX</li>
+                            <li>Design and implement RESTful APIs using ORDS for system integrations</li>
+                            <li>Optimize SQL and PL/SQL code for improved performance</li>
+                            <li>Create interactive dashboards for data visualization and business intelligence</li>
+                            <li>Implement AI/ML models within Oracle environments</li>
+                            <li>Provide technical consultation to clients for optimal solutions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
     <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
+        <div class="container">
+            <h2 class="section-title">My <span>Projects</span></h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Collection Management System</h3>
+                    <p>Enterprise application for managing financial collections with automated workflows, payment tracking, and reporting dashboard.</p>
+                    <div class="project-tech">
+                        <span>Oracle APEX</span>
+                        <span>PL/SQL</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
 
-            <div class="project-card">
-                <h3>Collection Management System</h3>
-                <p>Oracle APEX-based application for managing agents, supervisors, and payments.</p>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Employee Incentive Module</h3>
+                    <p>Performance-based incentive calculation system with dynamic rules, approval workflows, and real-time analytics.</p>
+                    <div class="project-tech">
+                        <span>Oracle APEX</span>
+                        <span>REST APIs</span>
+                        <span>PL/SQL</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Advanced Fraud Detection</h3>
+                    <p>AI-powered system for identifying anomalous patterns in financial transactions with real-time monitoring.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Machine Learning</span>
+                        <span>Oracle APEX</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Multi-Scale Calendar Template</h3>
+                    <p>Reusable calendar component for Oracle APEX supporting multiple time scales with drag-and-drop functionality.</p>
+                    <div class="project-tech">
+                        <span>Oracle APEX</span>
+                        <span>JavaScript</span>
+                        <span>CSS</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>ORDS API Integrations</h3>
+                    <p>RESTful API development for integrating Oracle applications with external systems using ORDS.</p>
+                    <div class="project-tech">
+                        <span>ORDS</span>
+                        <span>REST APIs</span>
+                        <span>JSON</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Dashboard & Analytics</h3>
+                    <p>Interactive business intelligence dashboard with drill-down capabilities and real-time data updates.</p>
+                    <div class="project-tech">
+                        <span>Oracle APEX</span>
+                        <span>JavaScript</span>
+                        <span>Charting</span>
+                    </div>
+                </div>
             </div>
-
-            <div class="project-card">
-                <h3>CRM Application</h3>
-                <p>Integrated API-based stage updates and dashboard reporting.</p>
-            </div>
-
         </div>
     </section>
 
     <!-- CONTACT SECTION -->
     <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <p>Email: yourmail@gmail.com</p>
-        <p>LinkedIn: linkedin.com/in/yourprofile</p>
+        <div class="container">
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect!</h3>
+                    <p>I'm always open to discussing new opportunities, interesting projects, or technology collaborations.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:kurukkanariarchithak@gmail.com">kurukkanariarchithak@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+916238995611">+91 6238995611</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Kozhikode, Kerala, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/architha-kurukkanari-424b0a193" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/ArchithaKurukkanari" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send me a message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Architha<span>.</span></h2>
+                    <p>Oracle APEX Developer & Technical Consultant</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 Architha Kurukkanari. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
