@@ -181,24 +181,6 @@ nav {
     color: var(--dark);
 }
 
-/* CV Button Styles */
-.btn-cv {
-    background: linear-gradient(135deg, #ff6b6b, #ff8e53);
-    border-color: #ff6b6b;
-    color: white;
-}
-
-.btn-cv:hover {
-    background: transparent;
-    color: #ff6b6b;
-    border-color: #ff6b6b;
-}
-
-/* Ensure PDF is accessible */
-a[download] {
-    text-decoration: none;
-}
-
 .social-icons {
     display: flex;
     gap: 15px;
@@ -424,66 +406,50 @@ section {
     background: rgba(0, 234, 255, 0.2);
 }
 
-/* Projects Section */
+/* PROJECTS SECTION */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 25px;
-    margin-top: 30px;
 }
 
 .project-card {
-    background: #1a1a1a;
+    background: var(--dark-light);
     padding: 25px;
     border-radius: 10px;
-    border-top: 4px solid #00eaff;
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-top: 4px solid var(--primary);
 }
 
 .project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(0, 234, 255, 0.1);
-}
-
-.project-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 234, 255, 0.1);
 }
 
 .project-icon {
-    width: 50px;
-    height: 50px;
-    background: linear-gradient(135deg, #00eaff, #8a2be2);
+    width: 55px;
+    height: 55px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #0f0f0f;
-    font-size: 20px;
-}
-
-.project-date {
-    background: rgba(0, 234, 255, 0.1);
-    color: #00eaff;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
+    font-size: 22px;
+    color: var(--dark);
+    margin-bottom: 18px;
 }
 
 .project-card h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: white;
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: var(--light);
 }
 
-.project-description {
-    color: #888;
+.project-card p {
+    color: var(--gray);
+    margin-bottom: 18px;
     font-size: 14px;
-    margin-bottom: 15px;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 .project-tech {
@@ -494,17 +460,11 @@ section {
 
 .tech-tag {
     background: rgba(0, 234, 255, 0.1);
-    color: #00eaff;
-    padding: 5px 10px;
+    color: var(--primary);
+    padding: 5px 12px;
     border-radius: 20px;
     font-size: 12px;
-}
-
-.section-subtitle {
-    text-align: center;
-    color: #888;
-    margin-bottom: 30px;
-    font-size: 16px;
+    border: 1px solid rgba(0, 234, 255, 0.3);
 }
 
 /* CONTACT SECTION */
