@@ -6,11 +6,69 @@
     <title>Architha Kurukkanari | Oracle APEX Developer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <style>
+        /* ADD THESE STYLES FOR EXPERIENCE SECTION */
+        .experience-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .experience-job {
+            background: #1a1a1a;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border-left: 4px solid #00eaff;
+            transition: transform 0.3s;
+        }
+        
+        .experience-job:hover {
+            transform: translateY(-5px);
+        }
+        
+        .job-title {
+            color: #00eaff;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        
+        .company-name {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .job-duration {
+            color: #888888;
+            font-style: italic;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .job-responsibilities {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .job-responsibilities li {
+            color: #cccccc;
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+            line-height: 1.6;
+        }
+        
+        .job-responsibilities li:before {
+            content: "▸";
+            color: #00eaff;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-
     <!-- HEADER -->
     <header>
         <nav>
@@ -22,8 +80,8 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -34,7 +92,7 @@
                 <h2>Oracle APEX Developer & Technical Consultant</h2>
                 <p>Building scalable enterprise applications with Oracle APEX, PL/SQL, and REST APIs. Specializing in database solutions with integrated AI/ML capabilities.</p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn">View Projects</a>
+                    <a href="#experience" class="btn">View Experience</a>
                     <a href="#contact" class="btn btn-outline">Contact Me</a>
                 </div>
                 <div class="social-icons">
@@ -62,10 +120,9 @@
                     </div>
                 </div>
                 <div class="about-text">
-                    <h3>Associate Technical Consultant at Assenta Systems</h3>
-                    <p>I'm a passionate Oracle APEX developer based in Kozhikode, Kerala, with expertise in building enterprise-grade applications, REST APIs, and data analytics solutions.</p>
-                    <p>My technical skills span across Oracle technologies including APEX, SQL, PL/SQL, ORDS, and JavaScript. I'm particularly interested in integrating AI/ML capabilities within database environments to create innovative solutions.</p>
-                    <p>Currently, I'm working at Assenta Systems where I develop applications that streamline business processes and improve operational efficiency for various clients.</p>
+                    <h3>Oracle APEX Developer with 2+ Years Experience</h3>
+                    <p>Oracle APEX Developer with more than two years of experience designing and optimizing enterprise applications. Proficient in SQL, PL/SQL, APEX, Performance Views, Data Dictionary, External Tables, Indexing, Cursors, Constraints, Job Scheduling, and Materialized Views.</p>
+                    <p>Specialized in APEX UI development, including themes, templates, forms, reports, and dashboards. Strong expertise in HTML, CSS, JavaScript, jQuery, and AJAX for front-end development.</p>
                     <div class="personal-info">
                         <div class="info-item">
                             <span class="info-label">Location:</span>
@@ -79,7 +136,91 @@
                             <span class="info-label">Phone:</span>
                             <span class="info-value">+91 6238995611</span>
                         </div>
+                        <div class="info-item">
+                            <span class="info-label">Experience:</span>
+                            <span class="info-value">2+ Years in Oracle APEX Development</span>
+                        </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPLETE EXPERIENCE SECTION -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Work <span>Experience</span></h2>
+            <div class="experience-container">
+                
+                <!-- Job 1: Current Role -->
+                <div class="experience-job">
+                    <h3 class="job-title">Technical Consultant</h3>
+                    <h4 class="company-name">Assenta Systems Pvt Ltd, Kozhikode</h4>
+                    <span class="job-duration">October 2024 - Present</span>
+                    <ul class="job-responsibilities">
+                        <li>Lead Oracle APEX application development and optimization projects for enterprise clients</li>
+                        <li>Design complex database architectures and implement performance tuning strategies</li>
+                        <li>Mentor junior developers and conduct technical training sessions</li>
+                        <li>Implement advanced automation solutions improving workflow efficiency</li>
+                        <li>Provide technical consultation for system architecture and integration solutions</li>
+                    </ul>
+                </div>
+                
+                <!-- Job 2: Previous Role at Assenta -->
+                <div class="experience-job">
+                    <h3 class="job-title">Associate Technical Consultant</h3>
+                    <h4 class="company-name">Assenta Systems Pvt Ltd, Kozhikode</h4>
+                    <span class="job-duration">October 2023 - September 2024</span>
+                    <ul class="job-responsibilities">
+                        <li>Designed and developed custom Oracle APEX applications, reducing manual processing by 35%</li>
+                        <li>Optimized data workflows with PL/SQL procedures and packages, boosting processing speed by 40%</li>
+                        <li>Designed tabular forms, master-detail pages, and interactive dashboards, reducing data retrieval time by 50%</li>
+                        <li>Implemented real-time reports and charts, accelerating decision-making by 60% through instant data insights</li>
+                        <li>Automated flat file data imports into Oracle, eliminating manual entry errors and reducing data inconsistencies by 90%</li>
+                        <li>Improved APEX page load times through query optimization, decreasing page response time by 45%</li>
+                    </ul>
+                </div>
+
+                <!-- Job 3: Apexon - Software Engineer -->
+                <div class="experience-job">
+                    <h3 class="job-title">Software Engineer</h3>
+                    <h4 class="company-name">Apexon, Bangalore</h4>
+                    <span class="job-duration">December 2022 - September 2023</span>
+                    <ul class="job-responsibilities">
+                        <li>Monitored and resolved 95%+ of order and interface issues within SLA, ensuring seamless order processing</li>
+                        <li>Executed global order management strategies, leading to a 15% improvement in fulfilment speed</li>
+                        <li>Delivered comprehensive reports and data-driven insights to senior management, contributing to a 20% reduction in customer escalations</li>
+                        <li>Supported Bloomberg Product deployments, maintaining 99.9% system uptime</li>
+                        <li>Ensured stable performance in production environments through proactive monitoring</li>
+                    </ul>
+                </div>
+
+                <!-- Job 4: Apexon - Associate Software Engineer -->
+                <div class="experience-job">
+                    <h3 class="job-title">Associate Software Engineer</h3>
+                    <h4 class="company-name">Apexon, Bangalore</h4>
+                    <span class="job-duration">April 2022 - April 2023</span>
+                    <ul class="job-responsibilities">
+                        <li>Developed and maintained software solutions for enterprise clients</li>
+                        <li>Collaborated with cross-functional teams on system integrations and deployments</li>
+                        <li>Participated in code reviews and quality assurance processes</li>
+                        <li>Contributed to database design and optimization projects</li>
+                        <li>Assisted in troubleshooting and resolving production issues</li>
+                    </ul>
+                </div>
+
+                <!-- Job 5: Strokk Technologies -->
+                <div class="experience-job">
+                    <h3 class="job-title">Junior Front-End Developer</h3>
+                    <h4 class="company-name">Strokk Technologies, Kochi (Remote)</h4>
+                    <span class="job-duration">August 2021 - April 2022</span>
+                    <ul class="job-responsibilities">
+                        <li>Designed and enhanced high-fidelity prototypes for web applications, improving user engagement by 25%</li>
+                        <li>Collaborated with cross-functional teams to transform 100% of project requirements into functional interfaces</li>
+                        <li>Enhanced overall client satisfaction by 20% through intuitive UI/UX using HTML, CSS, and JavaScript</li>
+                        <li>Developed responsive web interfaces and implemented front-end best practices</li>
+                        <li>Created reusable UI components that accelerated development timelines</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -91,7 +232,7 @@
             <h2 class="section-title">Technical <span>Skills</span></h2>
             <div class="skills-container">
                 <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> Database Technologies</h3>
+                    <h3><i class="fas fa-database"></i> Oracle Technologies</h3>
                     <div class="skill-box">
                         <div class="skill">
                             <div class="skill-name">Oracle APEX</div>
@@ -100,13 +241,7 @@
                             </div>
                         </div>
                         <div class="skill">
-                            <div class="skill-name">SQL</div>
-                            <div class="skill-level">
-                                <div class="level-bar" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-name">PL/SQL</div>
+                            <div class="skill-name">SQL & PL/SQL</div>
                             <div class="skill-level">
                                 <div class="level-bar" style="width: 92%"></div>
                             </div>
@@ -114,75 +249,33 @@
                         <div class="skill">
                             <div class="skill-name">Oracle Database</div>
                             <div class="skill-level">
-                                <div class="level-bar" style="width: 88%"></div>
+                                <div class="level-bar" style="width: 90%"></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programming & APIs</h3>
+                    <h3><i class="fas fa-code"></i> Web Development</h3>
                     <div class="skill-box">
                         <div class="skill">
-                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-name">JavaScript & jQuery</div>
                             <div class="skill-level">
-                                <div class="level-bar" style="width: 80%"></div>
+                                <div class="level-bar" style="width: 88%"></div>
                             </div>
                         </div>
                         <div class="skill">
-                            <div class="skill-name">Python</div>
-                            <div class="skill-level">
-                                <div class="level-bar" style="width: 75%"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-name">REST APIs (ORDS)</div>
+                            <div class="skill-name">HTML5 & CSS3</div>
                             <div class="skill-level">
                                 <div class="level-bar" style="width: 85%"></div>
                             </div>
                         </div>
                         <div class="skill">
-                            <div class="skill-name">HTML/CSS</div>
+                            <div class="skill-name">REST APIs (ORDS)</div>
                             <div class="skill-level">
-                                <div class="level-bar" style="width: 82%"></div>
+                                <div class="level-bar" style="width: 87%"></div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-cogs"></i> Specializations</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">AI/ML Integration</span>
-                        <span class="skill-tag">Data Analytics</span>
-                        <span class="skill-tag">Dashboard Development</span>
-                        <span class="skill-tag">System Integration</span>
-                        <span class="skill-tag">Performance Optimization</span>
-                        <span class="skill-tag">Git Version Control</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- EXPERIENCE SECTION -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Work <span>Experience</span></h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">Mar 2023 - Present</div>
-                    <div class="timeline-content">
-                        <h3>Associate Technical Consultant</h3>
-                        <h4>Assenta Systems</h4>
-                        <ul>
-                            <li>Develop and maintain enterprise applications using Oracle APEX</li>
-                            <li>Design and implement RESTful APIs using ORDS for system integrations</li>
-                            <li>Optimize SQL and PL/SQL code for improved performance</li>
-                            <li>Create interactive dashboards for data visualization and business intelligence</li>
-                            <li>Implement AI/ML models within Oracle environments</li>
-                            <li>Provide technical consultation to clients for optimal solutions</li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -199,7 +292,7 @@
                         <i class="fas fa-chart-line"></i>
                     </div>
                     <h3>Collection Management System</h3>
-                    <p>Enterprise application for managing financial collections with automated workflows, payment tracking, and reporting dashboard.</p>
+                    <p>Enterprise application for managing financial collections with automated workflows and reporting.</p>
                     <div class="project-tech">
                         <span>Oracle APEX</span>
                         <span>PL/SQL</span>
@@ -209,66 +302,14 @@
 
                 <div class="project-card">
                     <div class="project-icon">
-                        <i class="fas fa-users"></i>
+                        <i class="fas fa-robot"></i>
                     </div>
-                    <h3>Employee Incentive Module</h3>
-                    <p>Performance-based incentive calculation system with dynamic rules, approval workflows, and real-time analytics.</p>
+                    <h3>AI-Powered Chatbot</h3>
+                    <p>Intelligent chatbot with natural language processing for automated customer service.</p>
                     <div class="project-tech">
                         <span>Oracle APEX</span>
-                        <span>REST APIs</span>
-                        <span>PL/SQL</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Advanced Fraud Detection</h3>
-                    <p>AI-powered system for identifying anomalous patterns in financial transactions with real-time monitoring.</p>
-                    <div class="project-tech">
                         <span>Python</span>
-                        <span>Machine Learning</span>
-                        <span>Oracle APEX</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-calendar-alt"></i>
-                    </div>
-                    <h3>Multi-Scale Calendar Template</h3>
-                    <p>Reusable calendar component for Oracle APEX supporting multiple time scales with drag-and-drop functionality.</p>
-                    <div class="project-tech">
-                        <span>Oracle APEX</span>
-                        <span>JavaScript</span>
-                        <span>CSS</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>ORDS API Integrations</h3>
-                    <p>RESTful API development for integrating Oracle applications with external systems using ORDS.</p>
-                    <div class="project-tech">
-                        <span>ORDS</span>
-                        <span>REST APIs</span>
-                        <span>JSON</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-chart-bar"></i>
-                    </div>
-                    <h3>Dashboard & Analytics</h3>
-                    <p>Interactive business intelligence dashboard with drill-down capabilities and real-time data updates.</p>
-                    <div class="project-tech">
-                        <span>Oracle APEX</span>
-                        <span>JavaScript</span>
-                        <span>Charting</span>
+                        <span>NLP</span>
                     </div>
                 </div>
             </div>
@@ -300,14 +341,6 @@
                                 <a href="tel:+916238995611">+91 6238995611</a>
                             </div>
                         </div>
-                        
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Location</h4>
-                                <p>Kozhikode, Kerala, India</p>
-                            </div>
-                        </div>
                     </div>
                     
                     <div class="social-links">
@@ -318,22 +351,6 @@
                             <i class="fab fa-github"></i> GitHub
                         </a>
                     </div>
-                </div>
-                
-                <div class="contact-form">
-                    <h3>Send me a message</h3>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Send Message</button>
-                    </form>
                 </div>
             </div>
         </div>
@@ -352,6 +369,7 @@
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
                     <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
                     <a href="#projects">Projects</a>
                     <a href="#contact">Contact</a>
                 </div>
