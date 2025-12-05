@@ -27,7 +27,8 @@ body {
     line-height: 1.6;
     min-height: 100vh;
     width: 100%;
-    overflow-x: hidden; /* Keep only this one */
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -94,11 +95,13 @@ nav {
 /* HERO SECTION - FIXED POSITIONING */
 .hero {
     padding: 150px 60px 100px;
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: space-between;
     min-height: 100vh;
     margin-top: 0;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 .hero-content {
@@ -219,7 +222,7 @@ section {
     padding: 100px 0;
     position: relative;
     width: 100%;
-    /* overflow: visible; */
+    overflow: visible;
 }
 
 .section-title {
@@ -246,7 +249,7 @@ section {
     width: 300px;
     height: 300px;
     border-radius: 20px;
-    /* overflow: hidden; */
+    overflow: hidden;
     margin: 0 auto;
     border: 3px solid var(--primary);
 }
@@ -408,7 +411,7 @@ section {
     height: 8px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 4px;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .level-bar {
@@ -842,4 +845,51 @@ footer {
     section {
         padding: 80px 0;
     }
+}
+
+
+
+/* FIX FOR MISSING CONTENT - ADD THIS */
+body > *:not(header) {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: static !important;
+}
+
+section {
+    display: block !important;
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+.hero, .about, .skills, .experience, .projects, .contact, .education {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+
+/* FORCE ALL CONTENT TO BE VISIBLE */
+body {
+    overflow: auto !important;
+}
+
+section, .hero, .about, .skills, .experience, .projects, .contact, .education {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+.hero {
+    display: flex !important;
+    min-height: 100vh !important;
+}
+
+/* Remove any hidden states */
+[style*="display: none"], [style*="visibility: hidden"] {
+    display: block !important;
+    visibility: visible !important;
 }
