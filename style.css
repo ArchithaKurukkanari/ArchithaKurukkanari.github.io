@@ -181,6 +181,24 @@ nav {
     color: var(--dark);
 }
 
+/* CV Button Styles */
+.btn-cv {
+    background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+    border-color: #ff6b6b;
+    color: white;
+}
+
+.btn-cv:hover {
+    background: transparent;
+    color: #ff6b6b;
+    border-color: #ff6b6b;
+}
+
+/* Ensure PDF is accessible */
+a[download] {
+    text-decoration: none;
+}
+
 .social-icons {
     display: flex;
     gap: 15px;
