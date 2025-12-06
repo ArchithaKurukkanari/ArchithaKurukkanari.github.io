@@ -255,7 +255,7 @@ section {
 /* ABOUT SECTION */
 .about-content {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
     gap: 50px;
     align-items: center;
 }
@@ -266,7 +266,6 @@ section {
     border-radius: 20px;
     overflow: hidden;
     border: 5px solid var(--primary);
-    margin: 0 auto;
     box-shadow: 0 15px 30px rgba(0, 234, 255, 0.1);
 }
 
@@ -754,12 +753,22 @@ footer {
     
     .personal-info {
         grid-template-columns: 1fr;
+        text-align: left;
     }
     
     .profile-image-container,
     .about-img .image-container {
         width: 250px;
         height: 250px;
+        margin: 0 auto;
+    }
+    
+    .about-img {
+        order: 2;
+    }
+    
+    .about-text {
+        order: 1;
     }
 }
 
@@ -855,5 +864,9 @@ footer {
     
     .social-links {
         flex-direction: column;
+    }
+    
+    .about-content {
+        gap: 30px;
     }
 }

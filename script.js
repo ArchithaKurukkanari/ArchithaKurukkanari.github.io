@@ -170,28 +170,6 @@ document.addEventListener('DOMContentLoaded', () => {
             heroImage.style.transform = 'translateX(0)';
         }, 500);
     }
-    
-    // Add typing effect to hero text
-    const heroTitle = document.querySelector('.hero h1');
-    if (heroTitle && !sessionStorage.getItem('typingEffect')) {
-        const originalText = heroTitle.innerHTML;
-        const words = originalText.split(' ');
-        heroTitle.innerHTML = '';
-        
-        words.forEach((word, wordIndex) => {
-            const wordSpan = document.createElement('span');
-            wordSpan.innerHTML = word + ' ';
-            wordSpan.style.opacity = '0';
-            heroTitle.appendChild(wordSpan);
-            
-            setTimeout(() => {
-                wordSpan.style.transition = 'opacity 0.5s ease';
-                wordSpan.style.opacity = '1';
-            }, wordIndex * 100);
-        });
-        
-        sessionStorage.setItem('typingEffect', 'true');
-    }
 });
 
 // Form validation enhancement
