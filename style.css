@@ -267,6 +267,7 @@ section {
     overflow: hidden;
     border: 5px solid var(--primary);
     box-shadow: 0 15px 30px rgba(0, 234, 255, 0.1);
+    margin-left: auto;
 }
 
 .profile-photo-main {
@@ -302,10 +303,12 @@ section {
     font-weight: 600;
     color: var(--primary);
     margin-bottom: 5px;
+    font-size: 14px;
 }
 
 .info-value {
     color: var(--gray);
+    font-size: 14px;
 }
 
 /* SKILLS SECTION */
@@ -388,96 +391,106 @@ section {
     background: rgba(10, 10, 10, 0.5);
 }
 
-.timeline {
-    max-width: 800px;
+.experience-container {
+    max-width: 1000px;
     margin: 0 auto;
-    position: relative;
-    padding-left: 50px;
 }
 
-.timeline::before {
+.experience-card {
+    background: var(--dark-light);
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-left: 5px solid var(--primary);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 234, 255, 0.1);
+}
+
+.experience-card::before {
     content: '';
     position: absolute;
-    left: 30px;
     top: 0;
-    bottom: 0;
-    width: 2px;
-    background: var(--primary);
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--primary), var(--secondary));
 }
 
-.timeline-item {
+.experience-header {
     display: flex;
-    flex-direction: column;
-    margin-bottom: 40px;
-    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.timeline-date {
-    width: 120px;
-    padding: 5px 15px;
-    background: var(--primary);
-    color: var(--dark);
+.experience-date {
+    background: rgba(0, 234, 255, 0.1);
+    color: var(--primary);
+    padding: 8px 20px;
     border-radius: 20px;
     font-weight: 600;
-    text-align: center;
-    margin-bottom: 15px;
     font-size: 14px;
-    position: relative;
-    left: -50px;
-    box-shadow: 0 5px 15px rgba(0, 234, 255, 0.3);
+    border: 1px solid rgba(0, 234, 255, 0.3);
 }
 
-.timeline-content {
-    background: var(--dark-light);
-    padding: 25px;
-    border-radius: 10px;
-    border-left: 4px solid var(--primary);
-    position: relative;
+.experience-location {
+    color: var(--gray);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
-.timeline-content::before {
-    content: '';
-    position: absolute;
-    left: -8px;
-    top: 20px;
-    width: 12px;
-    height: 12px;
-    background: var(--primary);
-    border-radius: 50%;
-    box-shadow: 0 0 0 4px rgba(0, 234, 255, 0.2);
+.experience-location::before {
+    content: '📍';
+    font-size: 12px;
 }
 
-.timeline-content h3 {
-    font-size: 22px;
+.experience-content h3 {
+    font-size: 24px;
     color: var(--light);
     margin-bottom: 5px;
 }
 
-.timeline-content h4 {
+.experience-content h4 {
     color: var(--primary);
     font-weight: 600;
-    margin-bottom: 15px;
-    font-size: 16px;
+    margin-bottom: 20px;
+    font-size: 18px;
 }
 
-.timeline-content ul {
-    padding-left: 20px;
+.experience-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.experience-list li {
+    margin-bottom: 12px;
     color: var(--gray);
-}
-
-.timeline-content li {
-    margin-bottom: 8px;
+    line-height: 1.6;
+    padding-left: 25px;
     position: relative;
 }
 
-.timeline-content li::marker {
+.experience-list li span {
+    position: absolute;
+    left: 0;
     color: var(--primary);
+    font-weight: bold;
 }
 
 .experience-note {
     text-align: center;
-    margin-top: 40px;
-    padding-top: 20px;
+    margin-top: 50px;
+    padding-top: 30px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -485,10 +498,20 @@ section {
     color: var(--primary);
     text-decoration: none;
     font-weight: 600;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .experience-note a:hover {
     text-decoration: underline;
+    color: var(--primary-dark);
+}
+
+.experience-note a::after {
+    content: '→';
+    font-size: 18px;
 }
 
 /* PROJECTS SECTION */
@@ -812,12 +835,26 @@ footer {
         height: 200px;
     }
     
-    .timeline {
-        padding-left: 30px;
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
     }
     
-    .timeline-date {
-        left: -30px;
+    .experience-card {
+        padding: 25px 20px;
+    }
+    
+    .experience-content h3 {
+        font-size: 20px;
+    }
+    
+    .experience-content h4 {
+        font-size: 16px;
+    }
+    
+    .experience-list li {
+        font-size: 14px;
     }
     
     .footer-content {
@@ -850,12 +887,17 @@ footer {
         gap: 15px;
     }
     
-    .timeline::before {
-        left: 20px;
+    .experience-card {
+        padding: 20px 15px;
     }
     
-    .timeline-content {
-        margin-left: 0;
+    .experience-date {
+        font-size: 12px;
+        padding: 6px 15px;
+    }
+    
+    .experience-location {
+        font-size: 12px;
     }
     
     .skills-container {
@@ -868,118 +910,5 @@ footer {
     
     .about-content {
         gap: 30px;
-    }
-}
-
-
-
-/* Add these styles to your existing style.css */
-
-/* About Section Stats */
-.about-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 50px;
-    align-items: start;
-}
-
-.about-stats {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-.stat-card {
-    background: var(--dark-light);
-    padding: 20px;
-    border-radius: 10px;
-    border-left: 4px solid var(--primary);
-    transition: transform 0.3s;
-}
-
-.stat-card:hover {
-    transform: translateY(-5px);
-}
-
-.stat-icon {
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-    color: var(--dark);
-    font-size: 18px;
-}
-
-.stat-content h3 {
-    font-size: 24px;
-    color: var(--primary);
-    margin-bottom: 5px;
-}
-
-.stat-content p {
-    color: var(--gray);
-    font-size: 14px;
-}
-
-/* Personal Info Grid */
-.personal-info {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    margin-top: 30px;
-}
-
-.info-item {
-    display: flex;
-    flex-direction: column;
-}
-
-.info-label {
-    font-weight: 600;
-    color: var(--primary);
-    margin-bottom: 5px;
-    font-size: 14px;
-}
-
-.info-value {
-    color: var(--gray);
-    font-size: 14px;
-}
-
-/* Remove old about-img styles since we're not using photo here */
-.about-img {
-    display: none;
-}
-
-/* Responsive Design for About Section */
-@media (max-width: 992px) {
-    .about-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    
-    .about-stats {
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 500px;
-        margin: 40px auto 0;
-    }
-    
-    .personal-info {
-        grid-template-columns: 1fr;
-        text-align: left;
-    }
-}
-
-@media (max-width: 576px) {
-    .about-stats {
-        grid-template-columns: 1fr;
-    }
-    
-    .personal-info {
-        grid-template-columns: 1fr;
     }
 }
